@@ -1,0 +1,34 @@
+main {
+  background-image: url('../../../../public/img/boat-painting.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .pres {
+    z-index: 1;
+    color: #772000;
+    text-align: center;
+
+    p {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+  }
+
+  .white-cover {
+    background-color: white;
+    opacity: 0.3;
+    position: absolute;
+  }
+}
+
+@media (min-width: 480px) {
+  main {
+    background-image: url('../../../../public/img/fish-painting.jpg');
+
+    p {
+      max-width: 30rem;
+    }
+  }
+}
