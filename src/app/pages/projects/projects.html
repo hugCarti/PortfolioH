@@ -2,11 +2,10 @@
     <h1>Projects</h1>
     <p>Here are some of my recent projects.</p>
     <div class="container d-flex flex-wrap justify-content-center gap-5">
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
-        <app-card></app-card>
+        <app-card *ngFor="let project of projects"
+                  [title]="project.title"
+                  [githubUrl]="project.githubUrl"
+                  [imageUrl]="project.imageUrl">
+                </app-card>
     </div>
 </main>
