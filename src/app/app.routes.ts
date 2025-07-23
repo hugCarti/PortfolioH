@@ -10,14 +10,14 @@ export const routes: Routes = [
         path: '',
         component: Home
     },{ 
-        path: 'contact',
-        component: Contact
+        path: 'studies',
+        component: Studies
     },{ 
         path: 'projects',
         component: Projects
     },{ 
-        path: 'studies',
-        component: Studies
+        path: 'contact',
+        component: Contact
     },{
         path: '**',
         component: Error404
